@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: red;
+    background-color: black;
     padding: 10px 0;
 }
 
@@ -15,13 +15,13 @@ header {
     width: 300px;
     display: block;
     margin: 0 auto; /*margin top and bot, 0. Margin left and right auto*/
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    
 }
 
 #character_nav {
     background-color: #675050;
-    background-image: url(../images/characters_art_mas_mob_01.jpeg);
-    background-repeat: no-repeat;
+    background-image: url(../images/jjk_background.jpg);
+    
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -48,13 +48,13 @@ html, body {
     height: 10px 8pxpx;
     text-align: left;
     cursor: pointer;
-    box-shadow: 0 155px 0 rgb(255, 0, 0) inset;
+    box-shadow: 0 155px 0 rgb(131, 111, 1) inset;
     transition: box-shadow .2s ease;
     
 
 }
 .characters li:hover{
-    box-shadow: 0 220px 0 rgb(255, 0, 0) inset;
+    box-shadow: 0 220px 0 rgb(131, 111, 1) inset;
 
 }
 .characters li h5 {
@@ -81,17 +81,18 @@ article p, #instructions p {
 .sprite {
     width: 150px;
     height: 150px;
-    background-image: url('../images/marvelSprites.jpg');
+    background-image: url('../images/jjk_sprites.jpg');
 }
 
-#carol {background-position: -150px 0;}
-#clint {background-position: -300px 0;}
-#hulk {background-position: -450px 0;}
-#thor {background-position: -600px 0;}
-#widow {background-position: -750px 0;}
+#Yuji {background-position: -125px -150px;}
+#Megumi {background-position: -375px -150px;}
+#Nobara {background-position: -625px -150px;}
+#Gojo {background-position: -875px -150px;}
+#Sukuna {background-position: -1120px -150px;}
+#Toji {background-position: -1350px -150px;}
 
-#cap:hover, #carol:hover,#clint-hover,#hulk:hover,#thor-hover, #widow-hover {
-    background-position-y: -150px;
+#Yuji:hover, #Megumi:hover,#Nobara:hover,#Gojo:hover,#Sukuna:hover, #Toji:hover {
+    background-position-y: -2000px;
 }
 
 footer {
@@ -116,18 +117,30 @@ footer {
     height: 100vh;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url(../images/Cap_LB_Bg.png);
+    background-image: url(../images/Yuji_Itadori.png);
     background-repeat: no-repeat;
 
     background-size: 55vh;
     background-position: 40px bottom;
     display: none;
 }
-
 #lightbox2 {
-    background-image: url('../images/Thor_LB_Bg.png');
+    background-image: url('../images/Megumi_Fushiguro.png');
 }
 
+#lightbox3 {
+    background-image: url('../images/Nobara_Kugisaki.png');
+}
+
+#lightbox4 {
+    background-image: url('../images/Satoru_Gojo.png');
+}
+#lightbox5 {
+    background-image: url('../images/Sukuna.png');
+}
+#lightbox6 {
+    background-image: url('../images/Toji_Fushiguro.png');
+}
 .lightbox_close {
     position: absolute;
     top: 20px;
@@ -144,7 +157,7 @@ footer {
 
 .lightbox_close:hover {
     opacity: 0.5;
-    color: red;
+    color: yellow;
 }
 
 .lightbox article {
@@ -162,7 +175,7 @@ footer {
     line-height: 26px;
 }
 
-/* .lightbox#lightbox2  */
+/* .lightbox#lightbox5  */
 .lightbox:target {
     display: block;
 }
